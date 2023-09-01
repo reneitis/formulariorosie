@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário quem ama a rosé mais que eu</title>
+    <script>
+        alert("olá, preencha todo o formulário, por favor!")
+    </script>
+</head>
+<body>
+   <form name="form1" method="post" action=""></form> <!--metodo post usando para formularios! E action para enviar para um aoutra URL, mas nesse caso nao precisamos--> 
+    nome:
+    <input type="text" name="nome" required="required" placeholder="digite seu nome" size="50"> <!-- requiered é quando um campo tem que ser preenchido obrigatoriamente E placeholder o que aparerce escrito dentro no campo do formulario--> 
+    <br>
+    <input type="password" name="senha" required="requiered" placeholder="insira sua senha" autofocus="autofocus"> <!-- autofocus deve manter o foco nele enquanto estiverr na pagina--> 
+    <br>
+    <br>
+    <br>e-mail:
+    <input type="email" name="usermail" />
+    <br> url
+    <input type="url" name="homepage" />
+    <br>
+    <input name="oculto" type="hidden" value="algumacoisa">
+    <br> carros
+    <input type="checkbox" name="carros" value="mercedes"> mercedes
+    <input type="checkbox" name="carros" value="tesla"> tesla
+    <br>
+    <br>
+    <input type="button" name="botao" value="clique aqui!" onclick="alert('você clicou, parabéns')">
+    <br>
+    <br> escolha um arquivo
+    <input type="file" name="arquivo">
+    <br>
+    <br>
+    <input type="image" name="imagem" src="img/cinna.png" width="150" height="150"
+    <br>
+    <br> sexo 
+    <br>
+    <input type="radio" name="sexo" value="f"> feminino
+    <input type="radio" name="sexo" value="m"> masculino
+    <br>
+    <br>
+    <select>
+        <option value="java"> java</option>
+        <option value="php">php</option>
+        <option value="jsp">jsp</option>
+        <option value="hmtl">html</option>
+    </select>
+    <br>
+    <br>
+    <textarea rows="8" cols="70"></textarea><!-- rows tamanho da fonte E cols é coluna--> 
+    <br>
+    <br>
+    <br>
+    <button type="button">
+            <img src="img/coelho.jpeg" width="150" height="150">
+    </button>
+    <br>
+    <input type="submit" value="enviar">
+    </form>
+</body>
+</html>
